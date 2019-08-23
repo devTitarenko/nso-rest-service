@@ -1,4 +1,4 @@
-package com.example.nsorestservice;
+package com.lohika.nsorestservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

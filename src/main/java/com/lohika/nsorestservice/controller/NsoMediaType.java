@@ -1,4 +1,4 @@
-package com.example.nsorestservice.controller;
+package com.lohika.nsorestservice.controller;
 
 import lombok.Getter;
 

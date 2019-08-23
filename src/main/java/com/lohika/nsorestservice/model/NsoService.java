@@ -1,4 +1,4 @@
-package com.example.nsorestservice.model;
+package com.lohika.nsorestservice.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;

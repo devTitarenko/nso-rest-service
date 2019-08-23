@@ -1,4 +1,4 @@
-package com.example.nsorestservice.model;
+package com.lohika.nsorestservice.model;
 
 import lombok.Data;
 

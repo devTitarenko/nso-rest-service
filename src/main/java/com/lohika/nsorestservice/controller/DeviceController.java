@@ -1,6 +1,6 @@
-package com.example.nsorestservice.controller;
+package com.lohika.nsorestservice.controller;
 
-import com.example.nsorestservice.model.NsoDevice;
+import com.lohika.nsorestservice.model.NsoDevice;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;

@@ -1,4 +1,4 @@
-package com.example.nsorestservice;
+package com.lohika.nsorestservice;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
