@@ -15,9 +15,11 @@ import static org.springframework.http.HttpMethod.POST;
 @RestController
 public class ServiceController extends ParentController {
 
+    private static final String SERVICES = "services/";
+
     @GetMapping(value = "getServices", produces = MediaType.APPLICATION_JSON_VALUE)
     public Object getServices() {
-        String url = getNsoApiUrl() + API + RUNNING + "services/";
+        String url = getNsoApiUrl() + API + RUNNING + SERVICES;
         HttpHeaders headers = new HttpHeaders() {{
             set(ACCEPT, NsoMediaType.JSON_DATA.getStringValue());
         }};
@@ -26,7 +28,7 @@ public class ServiceController extends ParentController {
 
     @PostMapping("addService")
     public ResponseEntity addService(@RequestBody NsoService nsoService) {
-        String url = getNsoApiUrl() + API + RUNNING + "services/";
+        String url = getNsoApiUrl() + API + RUNNING + SERVICES;
         HttpHeaders headers = new HttpHeaders() {{
             set(CONTENT_TYPE, NsoMediaType.JSON_DATA.getStringValue());
         }};

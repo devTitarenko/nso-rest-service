@@ -3,18 +3,13 @@ package com.example.nsorestservice.model;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;
 
-@Getter
-@Setter
-@NoArgsConstructor
-@AllArgsConstructor
+@Data
 public class NsoService {
     private Service service;
 
-    @Getter
-    @Setter
+    @Data
     @NoArgsConstructor
-    @AllArgsConstructor
-    private class Service {
+    public class Service {
         @NonNull
         @JsonProperty("object-id")
         private String objectId;

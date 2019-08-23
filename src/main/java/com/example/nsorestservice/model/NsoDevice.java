@@ -1,18 +1,18 @@
 package com.example.nsorestservice.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import lombok.Getter;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import lombok.NonNull;
-import lombok.Setter;
 
-@Getter
-@Setter
+@Data
+@NoArgsConstructor
 public class NsoDevice {
     @NonNull
     private Device device;
 
-    @Getter
-    @Setter
+    @Data
+    @NoArgsConstructor
     public class Device {
         @NonNull
         private String name;
@@ -23,21 +23,18 @@ public class NsoDevice {
         private DeviceType deviceType;
         private State state;
 
-        @Getter
-        @Setter
+        @Data
         public class DeviceType {
             private Cli cli;
 
-            @Getter
-            @Setter
+            @Data
             public class Cli {
                 @JsonProperty("ned-id")
                 private String nedId;
             }
         }
 
-        @Getter
-        @Setter
+        @Data
         public class State {
             @JsonProperty("admin-state")
             private String adminState;
