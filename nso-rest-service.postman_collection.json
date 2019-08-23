@@ -121,6 +121,24 @@
 			"response": []
 		},
 		{
+			"name": "deleteService",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{service_url}}/deleteService/{{serviceId}}",
+					"host": [
+						"{{service_url}}"
+					],
+					"path": [
+						"deleteService",
+						"{{serviceId}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "getVersion",
 			"request": {
 				"method": "GET",
