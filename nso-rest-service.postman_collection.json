@@ -1,0 +1,226 @@
+{
+	"info": {
+		"_postman_id": "90c56ee8-4d20-40d6-9d74-b584f8f885b0",
+		"name": "nso-rest-service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getDevices",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:9999/getDevices",
+					"host": [
+						"localhost"
+					],
+					"port": "9999",
+					"path": [
+						"getDevices"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addDevice",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"device\": {\n        \"name\": \"22e2t9777\",\n        \"address\": \"127.0.0.1\",\n        \"port\": 10025,\n        \"authgroup\": \"default\",\n        \"device-type\": {\n            \"cli\": {\n                \"ned-id\": \"cisco-ios-cli-3.8:cisco-ios-cli-3.8\"\n            }\n        },\n        \"state\": {\n            \"admin-state\": \"unlocked\"\n        }\n    }\n}"
+				},
+				"url": {
+					"raw": "localhost:9999/addDevice",
+					"host": [
+						"localhost"
+					],
+					"port": "9999",
+					"path": [
+						"addDevice"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getServices",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:9999/getServices",
+					"host": [
+						"localhost"
+					],
+					"port": "9999",
+					"path": [
+						"getServices"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addService",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"service\": {\n        \"object-id\": \"serviceId\"\n    }\n}"
+				},
+				"url": {
+					"raw": "localhost:9999/addService",
+					"host": [
+						"localhost"
+					],
+					"port": "9999",
+					"path": [
+						"addService"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getVersion",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9999/getVersion",
+					"host": [
+						"localhost"
+					],
+					"port": "9999",
+					"path": [
+						"getVersion"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getConfig",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9999/getConfig",
+					"host": [
+						"localhost"
+					],
+					"port": "9999",
+					"path": [
+						"getConfig"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getConfigAaa",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9999/getConfigAaa",
+					"host": [
+						"localhost"
+					],
+					"port": "9999",
+					"path": [
+						"getConfigAaa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addUser",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user\": {\n        \"name\": \"userName\",\n        \"uid\": \"0\",\n        \"gid\": \"0\",\n        \"password\": \"\",\n        \"ssh_keydir\": \"\",\n        \"homedir\": \"\"\n    }\n}"
+				},
+				"url": {
+					"raw": "localhost:9999/addUser",
+					"host": [
+						"localhost"
+					],
+					"port": "9999",
+					"path": [
+						"addUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteUser",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:9999/deleteUser/userName",
+					"host": [
+						"localhost"
+					],
+					"port": "9999",
+					"path": [
+						"deleteUser",
+						"userName"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
