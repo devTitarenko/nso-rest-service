@@ -25,11 +25,10 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "localhost:9999/getDevices",
+					"raw": "{{service_url}}/getDevices",
 					"host": [
-						"localhost"
+						"{{service_url}}"
 					],
-					"port": "9999",
 					"path": [
 						"getDevices"
 					]
@@ -54,13 +53,30 @@
 					"raw": "{\n    \"device\": {\n        \"name\": \"22e2t9777\",\n        \"address\": \"127.0.0.1\",\n        \"port\": 10025,\n        \"authgroup\": \"default\",\n        \"device-type\": {\n            \"cli\": {\n                \"ned-id\": \"cisco-ios-cli-3.8:cisco-ios-cli-3.8\"\n            }\n        },\n        \"state\": {\n            \"admin-state\": \"unlocked\"\n        }\n    }\n}"
 				},
 				"url": {
-					"raw": "localhost:9999/addDevice",
+					"raw": "{{service_url}}/addDevice",
 					"host": [
-						"localhost"
+						"{{service_url}}"
 					],
-					"port": "9999",
 					"path": [
 						"addDevice"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteDevice",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{service_url}}/deleteDevice/{{deviceId}}",
+					"host": [
+						"{{service_url}}"
+					],
+					"path": [
+						"deleteDevice",
+						"{{deviceId}}"
 					]
 				}
 			},
@@ -79,11 +95,10 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "localhost:9999/getServices",
+					"raw": "{{service_url}}/getServices",
 					"host": [
-						"localhost"
+						"{{service_url}}"
 					],
-					"port": "9999",
 					"path": [
 						"getServices"
 					]
@@ -108,11 +123,10 @@
 					"raw": "{\n    \"service\": {\n        \"object-id\": \"serviceId\"\n    }\n}"
 				},
 				"url": {
-					"raw": "localhost:9999/addService",
+					"raw": "{{service_url}}/addService",
 					"host": [
-						"localhost"
+						"{{service_url}}"
 					],
-					"port": "9999",
 					"path": [
 						"addService"
 					]
@@ -144,11 +158,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:9999/getVersion",
+					"raw": "{{service_url}}/getVersion",
 					"host": [
-						"localhost"
+						"{{service_url}}"
 					],
-					"port": "9999",
 					"path": [
 						"getVersion"
 					]
@@ -162,11 +175,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:9999/getConfig",
+					"raw": "{{service_url}}/getConfig",
 					"host": [
-						"localhost"
+						"{{service_url}}"
 					],
-					"port": "9999",
 					"path": [
 						"getConfig"
 					]
@@ -180,11 +192,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:9999/getConfigAaa",
+					"raw": "{{service_url}}/getConfigAaa",
 					"host": [
-						"localhost"
+						"{{service_url}}"
 					],
-					"port": "9999",
 					"path": [
 						"getConfigAaa"
 					]
@@ -209,11 +220,10 @@
 					"raw": "{\n    \"user\": {\n        \"name\": \"userName\",\n        \"uid\": \"0\",\n        \"gid\": \"0\",\n        \"password\": \"\",\n        \"ssh_keydir\": \"\",\n        \"homedir\": \"\"\n    }\n}"
 				},
 				"url": {
-					"raw": "localhost:9999/addUser",
+					"raw": "{{service_url}}/addUser",
 					"host": [
-						"localhost"
+						"{{service_url}}"
 					],
-					"port": "9999",
 					"path": [
 						"addUser"
 					]
@@ -227,11 +237,10 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "localhost:9999/deleteUser/userName",
+					"raw": "{{service_url}}/deleteUser/userName",
 					"host": [
-						"localhost"
+						"{{service_url}}"
 					],
-					"port": "9999",
 					"path": [
 						"deleteUser",
 						"userName"
